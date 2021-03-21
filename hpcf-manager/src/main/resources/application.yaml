@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: hpcf
+  profiles:
+    active: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+swagger:
+  enable: true
+  application-name: ${spring.application.name}
+  application-version: 1.0.0
+  application-description: ${spring.application.name} 1.0 Beta
+  try-host: http://localhost:${server.port}
