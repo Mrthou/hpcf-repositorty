@@ -44,6 +44,16 @@ spring:
         max-wait: 3000ms
         max-active: 20
         min-idle: 3
+
+  #thymeleaf:
+    #prefix: classpath:/templates/
+    #suffix: .html
+  web:
+    resources:
+      static-locations: classpath:static/,file:static/
+
 mybatis:
   # type-aliases-package: cn.org.hpcf.api.pc.user.pojo
   mapper-locations: classpath:mappers/*.xml
+
+#设置静态资源路径，多个以逗号分隔
